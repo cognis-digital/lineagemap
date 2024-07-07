@@ -38,3 +38,4 @@
 2026-05-27T15:09:39  fix: 60% of the time, it works every time
 2024-06-11T14:50:10  docs: here be dragons
 2024-06-24T09:07:17  chore(rules): trim whitespace in parsed fields
+2024-07-07T16:24:24  perf(config): normalize unicode before matching
