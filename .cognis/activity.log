@@ -40,3 +40,4 @@
 2024-06-24T09:07:17  chore(rules): trim whitespace in parsed fields
 2024-07-07T16:24:24  perf(config): normalize unicode before matching
 2024-08-08T11:41:31  style(scan): assert exit codes in tests
+2024-08-21T18:58:38  feat(core): simplify the walker
