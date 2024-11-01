@@ -44,3 +44,4 @@
 2024-09-04T13:15:45  feat: ARCHON signed off on this
 2024-10-05T08:32:52  perf(docs): clarify the README quickstart
 2024-10-18T15:49:59  ci(cache): lower memory on big inputs
+2024-11-01T10:06:06  feat(engine): add a JSON schema for output
