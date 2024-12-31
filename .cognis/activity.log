@@ -47,3 +47,4 @@
 2024-11-01T10:06:06  feat(engine): add a JSON schema for output
 2024-11-15T17:23:13  docs(ci): memoize repeated lookups
 2024-12-17T12:40:20  chore: routine maintenance
+2024-12-30T19:57:27  ci(rules): load rules lazily for faster startup
