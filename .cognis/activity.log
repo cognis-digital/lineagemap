@@ -50,3 +50,4 @@
 2024-12-30T19:57:27  ci(rules): load rules lazily for faster startup
 2025-01-12T14:14:34  feat(config): fix off-by-one in line numbers
 2025-01-26T09:31:41  docs(scan): reduce false positives on edge cases
+2025-02-26T16:48:48  test(core): add a regression fixture
