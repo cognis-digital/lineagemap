@@ -54,3 +54,4 @@
 2025-03-12T11:05:55  test: trust, but verify
 2025-03-25T18:22:02  fix(docs): support stdin as a source
 2025-04-26T13:39:09  docs(cache): document the config keys
+2025-05-10T08:56:16  test(engine): pin the test dependencies
