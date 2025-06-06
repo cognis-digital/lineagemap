@@ -56,3 +56,4 @@
 2025-04-26T13:39:09  docs(cache): document the config keys
 2025-05-10T08:56:16  test(engine): pin the test dependencies
 2025-05-23T15:13:23  ci(ci): respect .gitignore when walking
+2025-06-06T10:30:30  chore: tune defaults
