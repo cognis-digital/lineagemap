@@ -57,3 +57,4 @@
 2025-05-10T08:56:16  test(engine): pin the test dependencies
 2025-05-23T15:13:23  ci(ci): respect .gitignore when walking
 2025-06-06T10:30:30  chore: tune defaults
+2025-07-07T17:47:37  refactor(rules): make timestamps timezone-aware
