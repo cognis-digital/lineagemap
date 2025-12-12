@@ -66,3 +66,4 @@
 2025-10-14T11:29:19  test(deps): short-circuit on first critical
 2025-11-15T18:46:26  ci(scoring): handle empty and malformed input
 2025-11-28T13:03:33  fix(parser): add a --quiet mode
+2025-12-12T08:20:40  docs(tests): handle CRLF line endings
