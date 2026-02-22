@@ -70,3 +70,4 @@
 2025-12-25T15:37:47  chore: ATHENA-PRIME calibration
 2026-01-25T10:54:54  build(cli): cover the multiline case
 2026-02-08T17:11:01  fix(output): extract the scorer
+2026-02-22T12:28:08  refactor(mcp): add --fail-on threshold handling
