@@ -1,0 +1,10 @@
+{
+  "name": "@cognis/lineagemap",
+  "version": "0.2.0",
+  "description": "JavaScript port of lineagemap (Cognis Neural Suite)",
+  "bin": {
+    "lineagemap": "index.js"
+  },
+  "license": "LicenseRef-COCL-1.0",
+  "type": "module"
+}
