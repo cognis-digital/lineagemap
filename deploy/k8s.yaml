@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: lineagemap, labels: { app: lineagemap } }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: lineagemap } }
+  template:
+    metadata: { labels: { app: lineagemap } }
+    spec:
+      containers:
+        - name: lineagemap
+          image: ghcr.io/cognis-digital/lineagemap:latest
+          ports: [{ containerPort: 8000 }]
+          resources:
+            requests: { cpu: "50m", memory: "64Mi" }
+            limits: { cpu: "500m", memory: "256Mi" }
+---
+apiVersion: v1
+kind: Service
+metadata: { name: lineagemap }
+spec:
+  selector: { app: lineagemap }
+  ports: [{ port: 80, targetPort: 8000 }]
