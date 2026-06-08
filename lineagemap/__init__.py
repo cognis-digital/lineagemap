@@ -1,26 +1,11 @@
-"""LINEAGEMAP - Column-level lineage extracted from SQL and dbt.
-
-Standard-library-only engine that parses SQL SELECT statements (and dbt
-models using {{ ref('...') }} / {{ source('...') }}) and resolves which
-upstream table.columns feed each output column.
-"""
-from .core import (
-    Lineage,
-    ColumnLineage,
-    extract_lineage,
-    analyze_files,
-    build_dbt_graph,
-)
-
-TOOL_NAME = "lineagemap"
-TOOL_VERSION = "1.0.0"
-
-__all__ = [
-    "Lineage",
-    "ColumnLineage",
-    "extract_lineage",
-    "analyze_files",
-    "build_dbt_graph",
-    "TOOL_NAME",
-    "TOOL_VERSION",
-]
+"""lineagemap — part of the Cognis Neural Suite."""
+try:  # re-export the tool's public API + identity from core
+    from lineagemap.core import *  # noqa: F401,F403
+except Exception:  # pragma: no cover
+    pass
+try:
+    from lineagemap.core import TOOL_NAME, TOOL_VERSION
+except Exception:  # pragma: no cover
+    TOOL_NAME = "lineagemap"
+    TOOL_VERSION = "0.1.0"
+__version__ = TOOL_VERSION
