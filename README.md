@@ -36,9 +36,9 @@ lineage is hot
 <a name="features"></a>
 ## Features
 
-- ✅ Todo
-- ✅ Fixme
-- ✅ Xxx
+- ✅ Extract Lineage
+- ✅ Analyze Files
+- ✅ Build Dbt Graph
 - ✅ Runs on Linux/macOS/Windows · Docker · devcontainer
 - ✅ Ports in Python, JavaScript, Go, and Rust (`ports/`)
 
