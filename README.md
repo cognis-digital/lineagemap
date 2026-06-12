@@ -16,7 +16,7 @@
 </div>
 
 ```bash
-pip install cognis-lineagemap
+pip install "git+https://github.com/cognis-digital/lineagemap.git"
 lineagemap scan .            # → prioritized findings in seconds
 ```
 
@@ -48,7 +48,7 @@ lineage is hot
 ## Quick start
 
 ```bash
-pip install cognis-lineagemap
+pip install "git+https://github.com/cognis-digital/lineagemap.git"
 lineagemap --version
 lineagemap scan .                       # scan current project
 lineagemap scan . --format json         # machine-readable
