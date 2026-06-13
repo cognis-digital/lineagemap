@@ -20,6 +20,32 @@ pip install cognis-lineagemap
 lineagemap scan .            # → prioritized findings in seconds
 ```
 
+## Usage — step by step
+
+1. **Install** (Python 3.8+, stdlib only):
+   ```bash
+   pip install lineagemap
+   ```
+2. **Trace column-level lineage** across one or more SQL / dbt model files:
+   ```bash
+   lineagemap trace models/staging/*.sql
+   ```
+   Each model lists its upstream tables and per-output-column sources.
+3. **Also emit the model-to-model dbt dependency graph**:
+   ```bash
+   lineagemap trace models/**/*.sql --graph
+   ```
+4. **Read the output as JSON** (or trace a single query from stdin):
+   ```bash
+   cat query.sql | lineagemap --format json trace --graph | jq '.models[].columns'
+   ```
+   JSON includes `models[]` (with `upstream_tables` and `columns[].sources`) and, with `--graph`, a `graph` map.
+5. **Use in CI** — regenerate the lineage artifact on every change to your warehouse models:
+   ```bash
+   lineagemap --format json trace models/**/*.sql --graph > artifacts/lineage.json
+   ```
+
+
 ## Contents
 
 - [Why lineagemap?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
