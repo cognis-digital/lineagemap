@@ -20,6 +20,12 @@ pip install "git+https://github.com/cognis-digital/lineagemap.git"
 lineagemap scan .            # → prioritized findings in seconds
 ```
 
+<!-- cognis:layman:start -->
+## What is this?
+
+lineagemap answers the question "where does this data column come from?" for your SQL queries and dbt models. You point it at a .sql file (or paste a query), and it tells you exactly which source tables and columns feed into each output column — for example, it can show that a report's "revenue" column is calculated from the "amount" column in your orders table. It is useful for data engineers, analysts, and anyone who needs to audit, document, or understand the flow of data through a SQL-based pipeline. The tool works entirely from the command line with no account or internet connection required.
+<!-- cognis:layman:end -->
+
 ## Contents
 
 - [Why lineagemap?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
@@ -45,6 +51,42 @@ lineage is hot
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="quick-start"></a>
+<!-- cognis:install:start -->
+## Install
+
+`lineagemap` is source-available (not published to PyPI) — every method below installs
+straight from GitHub. Pick whichever you prefer; the one-line scripts auto-detect
+the best tool available on your machine.
+
+**One-liner (Linux / macOS):**
+```sh
+curl -fsSL https://raw.githubusercontent.com/cognis-digital/lineagemap/HEAD/install.sh | sh
+```
+
+**One-liner (Windows PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/cognis-digital/lineagemap/HEAD/install.ps1 | iex
+```
+
+**Or install manually — any one of:**
+```sh
+pipx install "git+https://github.com/cognis-digital/lineagemap.git"     # isolated (recommended)
+uv tool install "git+https://github.com/cognis-digital/lineagemap.git"  # uv
+pip install "git+https://github.com/cognis-digital/lineagemap.git"      # pip
+```
+
+**From source:**
+```sh
+git clone https://github.com/cognis-digital/lineagemap.git
+cd lineagemap && pip install .
+```
+
+Then run:
+```sh
+lineagemap --help
+```
+<!-- cognis:install:end -->
+
 ## Quick start
 
 ```bash
